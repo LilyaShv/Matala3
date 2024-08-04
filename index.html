@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information</title>
+</head>
+<body>
+    <h1>Information</h1>
+    <form action="/predict" method="post">
+        <label for="Manufactor">Manufactor:</label>
+        <select name="Manufactor" id="Manufactor">
+            <option>אאודי</option>
+            <option>אברת'</option>
+            <option>אברת'</option>
+            <option>אוטוביאנקי</option>
+            <option>אולדסמוביל</option>
+            <option>אוסטין</option>
+            <option>אופל</option>
+            <option>אינפיניטי</option>
+            <option>אלפא רומיאו</option>
+            <option>אם. ג'י. / MG</option>
+            <option>ב.מ.וו</option>
+            <option>ביואיק</option>
+            <option>גרייט וול / G.O</option>
+            <option>דאצ'יה</option>
+            <option>דודג'</option>
+            <option>דייהו</option>
+            <option>דייהטסו</option>
+            <option>הונדה</option>
+            <option>וולוו</option>
+            <option>טויוטה</option>
+            <option>טסלה</option>
+            <option>יגואר</option>
+            <option>יונדאי</option>
+            <option>לאדה</option>
+            <option>לינקולן</option>
+            <option>לנצ'יה</option>
+            <option>לקסוס</option>
+            <option>מאזדה</option>
+            <option>מזראטי</option>
+            <option>מיני</option>
+            <option>מיצובישי</option>
+            <option>מרצדס</option>
+            <option>ניסאן</option>
+            <option>סאאב</option>
+            <option>סאנגיונג</option>
+            <option>סובארו</option>
+            <option>סוזוקי</option>
+            <option>סיאט</option>
+            <option>סיטרואן</option>
+            <option>סמארט</option>
+            <option>סקודה</option>
+            <option>פולקסווגן</option>
+            <option>פונטיאק</option>
+            <option>פורד</option>
+            <option>פורשה</option>
+            <option>פיאט</option>
+            <option>פיג'ו</option>
+            <option>פרארי</option>
+            <option>קאדילק</option>
+            <option>קיה</option>
+            <option>קרייזלר</option>
+            <option>רובר</option>
+            <option>רנו</option>
+            <option>שברולט</option>
+        </select><br><br>
+        <label for="model">model:</label>
+        <select name="model" id="model">
+            <option value="i35">i35</option>
+            <option value="ניסאן מיקרה">ניסאן מיקרה</option>
+            <option value="סוזוקי סוויפט">סוזוקי סוויפט</option>
+            <option value="אוריס">אוריס</option>
+            <option value="פיקנטו">פיקנטו</option>
+            <option value="אאודי A1">אאודי A1</option>
+            <option value="אימפרזה">אימפרזה</option>
+            <option value="ASX">ASX</option>
+            <option value="220">220</option>
+            <option value="525">525</option>
+            <option value="מוקה">מוקה</option>
+            <option value="פורטה">פורטה</option>
+            <option value="Q3">Q3</option>
+            <option value="סיוויק סדאן">סיוויק סדאן</option>
+            <option value="סוזוקי SX4 קרוסאובר">סוזוקי SX4 קרוסאובר</option>
+            <option value="קורולה">קורולה</option>
+            <option value="גולף">גולף</option>
+            <option value="פאסאט">פאסאט</option>
+            <option value="ספארק">ספארק</option>
+            <option value="מאזדה 3">מאזדה 3</option>
+            <option value="ניסאן נוט">ניסאן נוט</option>
+            <option value="סול">סול</option>
+            <option value="V40 CC">V40 CC</option>
+            <option value="לנסר ספורטבק">לנסר ספורטבק</option>
+            <option value="i10">i10</option>
+            <option value="סקודה פאביה (2012)">סקודה פאביה (2012)</option>
+            <option value="אוקטביה">אוקטביה</option>
+            <option value="CIVIC">CIVIC</option>
+            <option value="איוניק">איוניק</option>
+            <option value="סונטה">סונטה</option>
+            <option value="i30">i30</option>
+            <option value="C-HR">C-HR</option>
+            <option value="סקודה פאביה (2016)">סקודה פאביה (2016)</option>
+            <option value="E-Class">E-Class</option>
+            <option value="אפלנדר">אפלנדר</option>
+            <option value="SVX">SVX</option>
+            <option value="סוזוקי איגניס">סוזוקי איגניס</option>
+            <option value="i30">i30</option>
+            <option value="פולו">פולו</option>
+            <option value="S60">S60</option>
+            <option value="אאודי RS5">אאודי RS5</option>
+            <option value="ג'אז הייבריד">ג'אז הייבריד</option>
+            <option value="גטה">גטה</option>
+            <option value="A4">A4</option>
+            <option value="אס-מקס">אס-מקס</option>
+            <option value="נירו">נירו</option>
+            <option value="אינסייט">אינסייט</option>
+            <option value="רנו קליאו">רנו קליאו</option>
+            <option value="פאסאט CC">פאסאט CC</option>
+            <option value="S-Class">S-Class</option>
+            <option value="CADDY COMBI">CADDY COMBI</option>
+            <option value="XV">XV</option>
+            <option value="סקודה פאביה (2013)">סקודה פאביה (2013)</option>
+            <option value="i20">i20</option>
+            <option value="יאריס">יאריס</option>
+            <option value="316">316</option>
+            <option value="C3">C3</option>
+            <option value="סדרה 5">סדרה 5</option>
+            <option value="אקורד">אקורד</option>
+            <option value="i25">i25</option>
+            <option value="DS3">DS3</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="200">200</option>
+            <option value="B4">B4</option>
+            <option value="308">308</option>
+            <option value="סקודה פאביה (2015)">סקודה פאביה (2015)</option>
+            <option value="S7">S7</option>
+            <option value="אוקטביה ספייס">אוקטביה ספייס</option>
+            <option value="מאליבו">מאליבו</option>
+            <option value="רנו מגאן אסטייט / גראנד טור">רנו מגאן אסטייט / גראנד טור</option>
+            <option value="RS5">RS5</option>
+            <option value="אינסיגניה">אינסיגניה</option>
+            <option value="פריוס">פריוס</option>
+            <option value="120i">120i</option>
+            <option value="B3">B3</option>
+            <option value="CLK">CLK</option>
+            <option value="סלבריטי">סלבריטי</option>
+            <option value="XV">XV</option>
+            <option value="אוטבק">אוטבק</option>
+            <option value="120i">120i</option>
+            <option value="508">508</option>
+            <option value="RC">RC</option>
+            <option value="CT200H">CT200H</option>
+            <option value="בלנו">בלנו</option>
+            <option value="ג'ולייטה">ג'ולייטה</option>
+            <option value="פיאסטה">פיאסטה</option>
+            <option value="B4">B4</option>
+            <option value="טריוס">טריוס</option>
+            <option value="האצבק">האצבק</option>
+            <option value="S80">S80</option>
+            <option value="FR-V">FR-V</option>
+            <option value="AC">AC</option>
+            <option value="307CC">307CC</option>
+            <option value="I-MIEV">I-MIEV</option>
+            <option value="אקליפס">אקליפס</option>
+            <option value="אודסיי">אודסיי</option>
+            <option value="RS5">RS5</option>
+            <option value="120i">120i</option>
+        </select><br><br>
+        <label for="Year">Year:</label>
+        <select name="Year" id="Year">
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            <option>1994</option>
+            <option>1993</option>
+            <option>1992</option>
+            <option>1991</option>
+            <option>1990</option>
+        </select><br><br>
+        <label for="Hand">Hand:</label>
+        <select name="Hand" id="Hand">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select><br><br>
+        <label for="Gear">Gear:</label>
+        <select name="Gear" id="Gear">
+            <option>אוטומטית</option>
+            <option>ידנית</option>
+            <option>טיפטרוניק</option>
+            <option>רובוטית</option>
+        </select><br><br>
+        <label for="Price">Price:</label><br>
+        <input type="number" id="Price" name="Price" step="0.01"><br><br>
+        <label for="Description">Description:</label><br>
+        <input type="text" id="Description" name="Description"><br><br>
+        <label for="capacity_Engine">capacity_Engine:</label>
+        <select name="capacity_Engine" id="capacity_Engine">
+            <option>בנזין</option>
+            <option>דיזל</option>
+            <option>גז</option>
+            <option>היבריד</option>
+            <option>חשמלי</option>
+        </select><br><br>
+        <label for="Engine_type">Engine_type:</label>
+        <select name="Engine_type" id="Engine_type">
+            <option>800</option>
+            <option>1000</option>
+            <option>1100</option>
+            <option>1200</option>
+            <option>1300</option>
+            <option>1400</option>
+            <option>1500</option>
+            <option>1600</option>
+            <option>1800</option>
+            <option>1900</option>
+            <option>2000</option>
+            <option>2100</option>
+            <option>2200</option>
+            <option>2300</option>
+            <option>2400</option>
+            <option>2500</option>
+            <option>2600</option>
+            <option>2700</option>
+            <option>2800</option>
+            <option>2900</option>
+            <option>3000</option>
+            <option>3100</option>
+            <option>3200</option>
+            <option>3500</option>
+            <option>3600</option>
+            <option>3800</option>
+            <option>4000</option>
+            <option>4200</option>
+            <option>4500</option>
+            <option>4700</option>
+            <option>4900</option>
+            <option>5000</option>
+            <option>5500</option>
+            <option>6000</option>
+        </select><br><br>
+        <label for="Test_year">Test_year:</label>
+        <select name="Test_year" id="Test_year"> 
+            <option>2024</option>
+            <option>2025</option>
+        </select><br><br>
+        <label for="Test_month">Test_year:</label>
+        <select name="Test_month" id="Test_month"> 
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select><br><br>
+        <label for="Color">Color:</label>
+        <select name="Color" id="Color"> 
+            <option>אדום</option>
+            <option>אדום מטאלי</option>
+            <option>אפור</option>
+            <option>אפור מטאלי</option>
+            <option>אפור עכבר</option>
+            <option>בורדו</option>
+            <option>בורדו מטאלי</option>
+            <option>בז'</option>
+            <option>בז' מטאלי</option>
+            <option>ברונזה</option>
+            <option>ברונזה מטאלי</option>
+            <option>ורוד</option>
+            <option>זהב</option>
+            <option>זהב מטאלי</option>
+            <option>חום</option>
+            <option>חום מטאלי</option>
+            <option>חרדל</option>
+            <option>טורקיז</option>
+            <option>ירוק</option>
+            <option>ירוק בהיר</option>
+            <option>ירוק בקבוק</option>
+            <option>ירוק מטאלי</option>
+            <option>כחול</option>
+            <option>כחול בהיר</option>
+            <option>כחול בהיר מטאלי</option>
+            <option>כחול כהה</option>
+            <option>כחול כהה מטאלי</option>
+            <option>כחול מטאלי</option>
+            <option>כסוף</option>
+            <option>כסוף מטאלי</option>
+            <option>כסף מטלי</option>
+            <option>כתום</option>
+            <option>לבן</option>
+            <option>לבן מטאלי</option>
+            <option>לבן פנינה</option>
+            <option>לבן שנהב</option>
+            <option>סגול</option>
+            <option>סגול חציל</option>
+            <option>סגול מטאלי</option>
+            <option>צהוב</option>
+            <option>צהוב מטאלי</option>
+            <option>שחור</option>
+            <option>שמפניה</option>
+            <option>תכלת</option>
+            <option>תכלת מטאלי</option>
+        </select><br><br>
+        <label for="Prev_ownership">Prev_ownership:</label>
+        <select name="Prev_ownership" id="Prev_ownership"> 
+            <option>פרטית</option>
+            <option>חברה</option>
+            <option>השכרה</option>
+            <option>ליסינג</option>
+            <option>מונית</option>
+            <option>לימוד  נהיגה</option>
+            <option>ייבוא אישי</option>
+            <option>ממשלתי</option>
+            <option>אחר</option>
+        </select><br><br>    
+        <label for="Curr_ownership">Curr_ownership:</label>
+        <select name="Curr_ownership" id="Curr_ownership"> 
+            <option>חברה</option>
+            <option>השכרה</option>
+            <option>ליסינג</option>
+            <option>מונית</option>
+            <option>לימוד  נהיגה</option>
+            <option>ייבוא אישי</option>
+            <option>ממשלתי</option>
+            <option>אחר</option>
+        </select><br><br>   
+        <label for="City">City:</label><br>
+        <input type="text" id="City" name="City"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Predicted Price: {{ Price }}</h2>
+
+</body>
+</html>
